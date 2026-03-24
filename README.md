@@ -10,4 +10,5 @@ With this in mind, the paper "Affective Body Expression Perception and Recogniti
 This can be done by using Kleinsmith et al.'s research where they have compiled specific attributes from body emotions, that can work as a framework, and to test if these descriptions work, non-verbal scenes can be created in VR, where the user can then self-report what emotions they considered. 
 
 <img width="752" height="1244" alt="image" src="https://github.com/user-attachments/assets/bf406616-01f1-4fbd-8930-1d984a62f559" />
+
 Table of specific body features and how they may be atrributed to recognizing specific affective states [Kleinsmith et al. (2012)]

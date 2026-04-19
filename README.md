@@ -12,3 +12,8 @@ This can be done by using Kleinsmith et al.'s research where they have compiled 
 <img width="752" height="1244" alt="image" src="https://github.com/user-attachments/assets/bf406616-01f1-4fbd-8930-1d984a62f559" />
 
 Table of specific body features and how they may be attributed to recognizing specific affective states [Kleinsmith et al. (2012)]
+
+
+# Design
+
+For this project, a Unity script was made, that could track the effort of the user's movement, which could then change the effort, on a virtual character. This effort is shown through two animations: One that uses little space, with no weight, and another that uses the space and moves more freely. Therefore, the goal for this version of the system is to test whether the user feels that their effort is translated to the character or not.

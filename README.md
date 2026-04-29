@@ -13,8 +13,9 @@ This can be done by using Kleinsmith et al.'s research where they have compiled 
 
 Table of specific body features and how they may be attributed to recognizing specific affective states [Kleinsmith et al. (2012)]
 
-
 # Design
+
+Therefore, this miniproject will research the question: “Can approximated LMA-based motion metrics in VR reliably communicate affective expressiveness with a virtual agent?”
 
 To test this out, a Virtual Reality experience is made, where the user has to use their expressiveness to get closer to a virtual partner, who will match the user's expressiveness. 
 

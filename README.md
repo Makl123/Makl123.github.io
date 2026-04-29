@@ -13,15 +13,22 @@ This can be done by using Kleinsmith et al.'s research where they have compiled 
 
 Table of specific body features and how they may be attributed to recognizing specific affective states [Kleinsmith et al. (2012)]
 
+Therefore, this project will investigate how real-time movement qualities can create perceived emotional responsiveness in a virtual agent, supporting a sense of Response-As-If-Real (RAIR).
+
 # Design
 
-Therefore, this miniproject will research the question: “Can approximated LMA-based motion metrics in VR reliably communicate affective expressiveness with a virtual agent?”
+To test this out, a Virtual Reality experience is made, where the user has to use their expressiveness to get closer to a virtual agent, who will match the user's expressiveness. 
 
-To test this out, a Virtual Reality experience is made, where the user has to use their expressiveness to get closer to a virtual partner, who will match the user's expressiveness. 
-
-For this project, a Unity script was made, that could track the effort of the user's movement, which could then change the effort, on a virtual character. This effort is shown through two animations: One idle animation, and another that uses the space and moves more freely. This animation is then interpolated, so the partner starts to use more effort, as the user uses more effort. Therefore, the goal for this version of the system is to test whether the user feels that their effort is translated to the character or not.
+For this project, a Unity script was made, that could track the effort of the user's movement, which could then change the effort, on a virtual character. This effort is shown through two animations: One idle animation, and another that uses the space and moves more freely. This animation is then interpolated, so the agent starts to use more effort, as the user uses more effort. Therefore, the goal for this version of the system is to test whether the user feels that their effort is translated to the character or not.
 
 The system uses an approximation of LMA, by measuring smooth velocity, acceleration, and jerk, to reduce noise, which are then run through four "Update" methods. These update methods then run the smoothed values through them and then measure through a min and max value to see where the values are and then outputs between 0-1 how much the effort is one or the other. 
 
+These values are then given to the virtual agent, which can then calculate expressiveness and how much the user uses the kinesphere around them, to show a level of expressiveness that 
+can match the user's effort. If the user is not expressive enough, the agent will not get closer, so to "bound" with the agent is to use the expressiveness to get the agent closer. This measurement of getting closer to the user also uses Hall's Framework to keep the agent in the social space, to not break any boundaries.
 
-These values are then given to the virtual partner, which can then calculate expressiveness and how much the user uses the kinesphere around them, to show a level of expressiveness that can match the user's effort. If the user is not expressive enough, the partner will not get closer, so to "bound" with the partner is to use the expressiveness to get the partner closer. This measurement of getting closer to the user also uses Hall's Framework to keep the partner in the social space, to not break any boundaries.
+# Evaluation
+
+To test this, this system's feeling of RAIR will be evaluated on three aspects of the project: 
+- perceived expressiveness of the agent
+- feeling of presence
+- whether the users adjust movement based on the agent's behavior

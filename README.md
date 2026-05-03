@@ -30,5 +30,9 @@ can match the user's effort. If the user is not expressive enough, the agent wil
 
 To test this, this system's feeling of RAIR will be evaluated on three aspects of the project: 
 - perceived expressiveness of the agent
+- the boundary of the agent entering the user's space
 - feeling of presence
 - whether the users adjust movement based on the agent's behavior
+
+This prototype was tested on 5 Medialogy masters Students. The overall response was positive with 4 out of 5 saying that they felt the avatar matched their current expressiveness and they wanted to express themselves more to see how close they could get the avatar. Furthermore, the agent entering their social space worked, as 5 out of 5 of the participants felt that it was fun to get closer and it did not break any boundaries. 
+However, the feeling of presence with the avatar was not as highly praised, as the instant movement away felt forced. 

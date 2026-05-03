@@ -17,9 +17,9 @@ Therefore, this project will investigate how real-time movement qualities can cr
 
 # Design
 
-To test this out, a Virtual Reality experience is made, where the user has to use their expressiveness to get closer to a virtual agent, who will match the user's expressiveness. 
+To test this out, a Virtual Reality experience is made, where the user has to use their expressiveness to get closer to a virtual agent, who will match the user's expressiveness. The system takes in bodily movement, through the VR controllers, as input, and then outputs bodily expressions through the avatar.
 
-For this project, a Unity script was made, that could track the effort of the user's movement, which could then change the effort, on a virtual character. This effort is shown through two animations: One idle animation, and another that uses the space and moves more freely. This animation is then interpolated, so the agent starts to use more effort, as the user uses more effort. Therefore, the goal for this version of the system is to test whether the user feels that their effort is translated to the character or not.
+To do this, a Unity script was made, that could track the effort of the user's movement, which could then change the effort, on a virtual character. This effort is shown through two animations: One idle animation, and another that uses the space and moves more freely. This animation is then interpolated, so the agent starts to use more effort, as the user uses more effort. Therefore, the goal for this version of the system is to test whether the user feels that their effort is translated to the character or not.
 
 The system uses an approximation of LMA, by measuring smooth velocity, acceleration, and jerk, to reduce noise, which are then run through four "Update" methods. These update methods then run the smoothed values through them and then measure through a min and max value to see where the values are and then outputs between 0-1 how much the effort is one or the other. 
 
@@ -45,8 +45,14 @@ However, the feeling of presence with the avatar was not as highly praised, as t
 
 # Discussion
 
-Using a real-time avatar, that could go from low to high expressiveness, translated well to the user's expressiveness. Further design choices can help to increase the feeling of presence. This could also then be tested on more participants, as this project as of right now only has a small testing sample. Furthermore, further adjustments to the LMA system could also help to elevate the system, as these methods work as an approxmiation of the system, but cannot tell intention from the user.
+Using a real-time avatar, that could go from low to high expressiveness, translated well to the user's expressiveness. Further design choices can help to increase the feeling of presence, as the avatar going back felt too unrealistic. This could also then be tested on more participants, as this project as of right now only has a small testing sample. Furthermore, further adjustments to the LMA system could also help to elevate the system, as these methods work as an approxmiation of the system, but cannot tell intention from the user. This did not affect the participants experience, but it is important to address that this LMA system, as of right now, only works as an approximation of the kinematics.
 
 ## Bibliography
-[1] Kleinsmith, A., & Bianchi-Berthouze, N. (2012). Affective body expression perception and recognition: A survey. IEEE Transactions on Affective Computing, 4(1), 15-33.
-[2] Rehm, M., Krogsager, A., & Segato, N. (2015, October). Perception of affective body movements in HRI across age groups: Comparison between results from Denmark and Japan. In 2015 International Conference on Culture and Computing (Culture Computing) (pp. 25-32). IEEE.
+[1] Hall, E. T., Birdwhistell, R. L., Bock, B., Bohannan, P., Diebold Jr, A. R., Durbin, M., ... & Vayda, A. P. (1968). Proxemics [and comments and replies]. Current anthropology, 9(2/3), 83-108.
+
+[2] Kleinsmith, A., & Bianchi-Berthouze, N. (2012). Affective body expression perception and recognition: A survey. IEEE Transactions on Affective Computing, 4(1), 15-33.
+
+[3] Laban, R. (1947). with Lawrence, FC Effort: Economy of Human Movement. London: MacDonald and Evans.
+
+[4] Rehm, M., Krogsager, A., & Segato, N. (2015, October). Perception of affective body movements in HRI across age groups: Comparison between results from Denmark and Japan. In 2015 International Conference on Culture and Computing (Culture Computing) (pp. 25-32). IEEE.
+

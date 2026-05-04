@@ -1,8 +1,7 @@
 # Makl123.github.io
 Embodied Interaction Mini-project:
 
-For this mini-project, the topic of External representations & computing has been chosen.
-This was due to the assignment of the semester project, which was about translating a witness testimony to a virtual reality experience, which aimed to evoke Response-As-If-Real (RAIR) to immerse the user in the narrative told in the experience. RAIR is described as being the high level of presence, where a sensation feels so real that the user would react as if it was real. Presence can be elevated through auditory and visual design, so RAIR through virtual agents could potentially be elevated through human-like movement. Therefore, Affective Body Movement in VR is researched upon.
+This miniproject aims to support the main semester project, which is about translating a witness testimony to a virtual reality experience, which aims to evoke Response-As-If-Real (RAIR) to immerse the user in the narrative told in the experience. RAIR is described as being the high level of presence, where a sensation feels so real that the user would react as if it was real. Presence can be elevated through auditory and visual design, so RAIR through virtual agents could potentially be elevated through human-like movement. Therefore, affective body movement in VR is explored as a method of enhancing perceived realism and emotional engagement.
 
 With this in mind, the paper "Affective Body Expression Perception and Recognition: A Survey" by Andrea Kleinsmith and Nadia Bianchi-Berthouze and "Perception of Affective Body Movements in HRI Across Age Groups: Comparison Between Results from Denmark and Japan" by Matthias Rehm, Anders Krogsager and Nicolaj Segatowere researched, which investigate how bodily movement functions as a channel for emotional expression and perception. Some differences in understanding the meaning of movements can lead to misinterpreting different emotions, and for a VR experience that is supposed to feel as real to immerse the user in the story told, so how can that effectively be communicated through a virtual avatar, from the background to the front and center of attention?
 
@@ -22,7 +21,7 @@ To do this, a Unity script was made, that could track the effort of the user's m
 
 The system uses scripts that are inspired by the LMA descriptors, and approximately maps them by measuring smooth velocity, acceleration, and jerk, to reduce noise, which are then run through four "Update" methods. These update methods then run the smoothed values through them and then measure through a min and max value to see where the values are and then outputs between 0-1 how much the effort is one or the other. 
 
-These values are then given to the virtual agent, which can then calculate expressiveness and how much the user uses the kinesphere, which is the space reachable by the body, to show a level of expressiveness that can match the user's effort. If the user is not expressive enough, the agent will not get closer, so to engage with the agent is to use the expressiveness to get the agent closer. This measurement of getting closer to the user also uses Hall's theory of Proxemics to keep the agent in the social space, to not break any boundaries.
+These values are then given to the virtual agent, which can then calculate expressiveness and how much the user uses the kinesphere, which is the space reachable by the body, to show a level of expressiveness that can match the user's effort. If the user is not expressive enough, the agent will not get closer, so “engaging with the agent requires expressive user movement to get the agent closer. This measurement of getting closer to the user also uses Hall's theory of Proxemics to keep the agent in the social space, to not break any boundaries.
 | Code  | Description |
 | ------------- | ------------- |
 | <img width="873" height="242" alt="image" src="https://github.com/user-attachments/assets/1fefaa5e-3c01-42fc-ba4b-949ad2e9068c" /> | **Time** <br/> <br/> Interprets velocity with faster movement as more sudden, and slower movement as more sustained. Velocity is used as a method to map the rate of change in the hand movements, to see if the rate of change is sudden or sustained. |
@@ -34,14 +33,16 @@ These values are then given to the virtual agent, which can then calculate expre
 
 # Evaluation
 
-To test this, this system's feeling of RAIR will be evaluated on four aspects of the project: 
+To test this, the system’s ability to evoke RAIR will be evaluated on four aspects of the project: 
 - perceived expressiveness of the agent
 - the boundary of the agent entering the user's space
 - feeling of presence
 - whether the users adjust movement based on the agent's behavior
 
-This prototype was tested on five Medialogy masters Students. The overall response was positive with four out of five saying that they felt the avatar matched their current expressiveness and they wanted to express themselves more to see how close they could get the avatar. Furthermore, the agent entering their social space worked, as five out of five of the participants felt that it was fun to get closer and it did not break any boundaries. 
-However, the feeling of presence with the avatar was not as highly praised, as the instant movement away from the user felt forced and robotic and broke the immersion for 1 of the participants. 2 of the participants also suggested more animations, as the avatar felt "fun to move with", but felt a bit robotic in general, which suggests that more animations could maybe increase the level of RAIR from a more realistic moving partner. 
+After testing the prototype, the participants will be asked to self-report how they perceived each aspect on a five-point Likert scale. They were also asked if they wanted to elaborate on why they answered the way they did.
+
+This prototype was tested on five Medialogy master's students. The overall response was positive with the question of perceived expressiveness and adjustments of movements having mean scores of 4 and 4.2 respectively. The participants said that they felt the avatar matched their current expressiveness and they wanted to express themselves more to see how close they could get the avatar. Furthermore, the agent entering their social space worked well, as the mean ended up being 4.6, with the participants feeling that it was fun to get the agent closer and it did not break any boundaries. 
+However, the lowest mean of 2.6 came with the feeling of presence with the avatar was not as highly praised, as the agent’s sudden movement away from the user felt forced and robotic and broke the immersion for one of the participants. Two of the participants also suggested more animations, as the avatar felt "fun to move with", but felt a bit robotic in general, which suggests that more animations could maybe increase the level of RAIR from a more realistic moving partner. 
 
 # Discussion
 

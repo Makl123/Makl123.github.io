@@ -1,6 +1,6 @@
 # Makl123.github.io
 # Embodied Interaction Mini-project 
-## Real-Time Laban-Based Movement Mirroring for Emotional Responsiveness in Virtual Reality
+## Laban-Based Movement Mirroring in Virtual Reality
 
 This miniproject aims to support the main semester project, which is about translating a witness testimony to a virtual reality experience, with a goal of evoking Response-As-If-Real (RAIR) to immerse the user in the narrative told in the experience. RAIR is described as being the high level of presence, where a sensation feels so real that the user would react as if it was real. Presence can be elevated through auditory and visual design, so RAIR through virtual agents could potentially be elevated through human-like movement. Therefore, affective body movement in VR is explored as a method of enhancing perceived realism and emotional engagement.
 
